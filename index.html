@@ -87,28 +87,400 @@
 
     <!-- document section -->
     <section class="mx-28 px-16 py-5 text-gray-700">
-      <div class="">
+      <div class="flex flex-col">
         <h1 class="text-4xl font-extrabold py-3">
           <span class="text-blue-400">CSS</span> FlexBox properties
         </h1>
-        <p class="text-lg py-5 text-justify w-3/4">
+        <p class="text-lg py-5 text-justify w-auto">
           Since flexbox is a whole module and not a single property, it involves
           a lot of things including its whole set of properties. Some of them
           are meant to be set on the container (parent element, known as “flex
           container”) whereas the others are meant to be set on the children
           (said “flex items”).
         </p>
+        <img
+          src="https://dev-to-uploads.s3.amazonaws.com/i/hy2oqjvsbk60ef92nktg.png"
+          alt="flex_architecture"
+          width="600"
+          height="700"
+          class="self-center"
+        />
       </div>
       <div>
-        <h1 class="text-2xl font-bold text-gray-800">
-          Display:<span class="text-blue-400"> Flex</span>
-        </h1>
-        <div>
-          <p>
-            This defines a flex container; inline or block depending on the
-            given value. It enables a flex context for all its direct children.
-          </p>
+        <div
+          class="flex mt-5 px-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        >
+          <div class="pt-5 w-1/2">
+            <h1 class="text-2xl font-bold text-gray-800">
+              Display:<span class="text-blue-400"> Flex</span>
+            </h1>
+            <div class="p-5 flex flex-col gap-3">
+              <p class="text-lg text-gray-700">
+                This defines a flex container; inline or block depending on the
+                given value. It enables a flex context for all its direct
+                children.
+              </p>
+              <div
+                class="w-3/4 px-10 py-2 bg-slate-900 rounded-2xl border border-blue-800 flex"
+              >
+                <p class="text-gray-200 font-semibold text-lg">
+                  .container {<br />
+                  display: flex; /* or inline-flex */<br />
+                  }
+                </p>
+              </div>
+              <p class="text-lg font-light">
+                Note that CSS columns have no effect on a flex container.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex mt-5 px-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        >
+          <div class="pt-5 w-1/2">
+            <h1 class="text-2xl font-bold text-gray-800">
+              Flex<span class="text-blue-400">-direction</span>
+            </h1>
+            <div class="p-5 flex flex-col gap-3">
+              <p class="text-lg text-gray-700">
+                This establishes the main-axis, thus defining the direction flex
+                items are placed in the flex container. Flexbox is (aside from
+                optional wrapping) a single-direction layout concept. Think of
+                flex items as primarily laying out either in horizontal rows or
+                vertical columns.
+              </p>
+              <ul class="list-disc marker:text-blue-400 px-8">
+                <li>
+                  row (default): left to right in ltr; right to left in rtl
+                </li>
+                <li>row-reverse: right to left in ltr; left to right in rtl</li>
+                <li>column: same as row but top to bottom</li>
+                <li>column-reverse: same as row-reverse but bottom to top</li>
+              </ul>
+              <div
+                class="w-3/4 px-10 py-2 bg-slate-900 rounded-2xl border border-blue-800 flex"
+              >
+                <p class="text-gray-200 font-semibold text-lg">
+                  .container {<br />
+                  flex-direction: row | row-reverse | column |
+                  column-reverse;<br />
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex mt-5 px-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        >
+          <div class="pt-5 w-1/2">
+            <h1 class="text-2xl font-bold text-gray-800">
+              Justify<span class="text-blue-400">-Content</span>
+            </h1>
+            <div class="p-5 flex flex-col gap-3">
+              <p class="text-lg text-gray-700 text-justify">
+                This defines the alignment along the main axis. It helps
+                distribute extra free space leftover when either all the flex
+                items on a line are inflexible, or are flexible but have reached
+                their maximum size. It also exerts some control over the
+                alignment of items when they overflow the line.
+              </p>
+              <ul class="list-disc marker:text-blue-400 px-8 text-justify">
+                <li>
+                  flex-start (default): items are packed toward the start of the
+                  flex-direction.
+                </li>
+                <li>
+                  flex-end: items are packed toward the end of the
+                  flex-direction.
+                </li>
+                <li>
+                  start: items are packed toward the start of the writing-mode
+                  direction.
+                </li>
+                <li>
+                  end: items are packed toward the end of the writing-mode
+                  direction.
+                </li>
+                <li>
+                  left: items are packed toward left edge of the container,
+                  unless that doesn’t make sense with the flex-direction, then
+                  it behaves like start.
+                </li>
+                <li>
+                  right: items are packed toward right edge of the container,
+                  unless that doesn’t make sense with the flex-direction, then
+                  it behaves like end.
+                </li>
+                <li>center: items are centered along the line</li>
+                <li>
+                  space-between: items are evenly distributed in the line; first
+                  item is on the start line, last item on the end line
+                </li>
+                <li>
+                  space-around: items are evenly distributed in the line with
+                  equal space around them. Note that visually the spaces aren’t
+                  equal, since all the items have equal space on both sides. The
+                  first item will have one unit of space against the container
+                  edge, but two units of space between the next item because
+                  that next item has its own spacing that applies.
+                </li>
+                <li>
+                  space-evenly: items are distributed so that the spacing
+                  between any two items (and the space to the edges) is equal.
+                </li>
+              </ul>
+              <div
+                class="w-3/4 px-10 py-2 self-center bg-slate-900 rounded-2xl border border-blue-800 flex"
+              >
+                <p class="text-gray-200 font-semibold text-lg">
+                  .container {<br />
+                  justify-content: flex-start | flex-end | center |
+                  space-between | space-around | space-evenly | start | end |
+                  left | right ... + safe | unsafe;<br />
+                  }
+                </p>
+              </div>
+              <p class="text-lg font-light px-5">
+                Note that that browser support for these values is nuanced. For
+                example, space-between never got support from some versions of
+                Edge, and start/end/left/right aren’t in Chrome yet. MDN has
+                detailed charts. The safest values are flex-start, flex-end, and
+                center.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex mt-5 px-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        >
+          <div class="pt-5 w-1/2">
+            <h1 class="text-2xl font-bold text-gray-800">
+              Align<span class="text-blue-400">-items</span>
+            </h1>
+            <div class="p-5 flex flex-col gap-3">
+              <p class="text-lg text-gray-700 text-justify">
+                This defines the default behavior for how flex items are laid
+                out along the cross axis on the current line. Think of it as the
+                justify-content version for the cross-axis (perpendicular to the
+                main-axis).
+              </p>
+              <ul class="list-disc marker:text-blue-400 px-8">
+                <li>
+                  stretch (default): stretch to fill the container (still
+                  respect min-width/max-width)
+                </li>
+                <li>
+                  flex-start / start / self-start: items are placed at the start
+                  of the cross axis. The difference between these is subtle, and
+                  is about respecting the flex-direction rules or the
+                  writing-mode rules.
+                </li>
+                <li>
+                  flex-end / end / self-end: items are placed at the end of the
+                  cross axis. The difference again is subtle and is about
+                  respecting flex-direction rules vs. writing-mode rules.
+                </li>
+                <li>center: items are centered in the cross-axis</li>
+                <li>
+                  baseline: items are aligned such as their baselines align
+                </li>
+              </ul>
+              <div
+                class="w-3/4 self-center px-10 py-2 bg-slate-900 rounded-2xl border border-blue-800 flex"
+              >
+                <p class="text-gray-200 font-semibold text-lg">
+                  .container {<br />
+                  align-items: stretch | flex-start | flex-end | center |
+                  baseline | first baseline | last baseline | start | end |
+                  self-start | self-end + ... safe | unsafe;<br />
+                  }
+                </p>
+              </div>
+              <p class="text-lg font-light px-5 text-justify">
+                The safe and unsafe modifier keywords can be used in conjunction
+                with all the rest of these keywords (although note browser
+                support), and deal with helping you prevent aligning elements
+                such that the content becomes inaccessible.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex mt-5 px-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        >
+          <div class="pt-5 w-1/2">
+            <h1 class="text-2xl font-bold text-gray-800">
+              Align<span class="text-blue-400">-content</span>
+            </h1>
+            <div class="p-5 flex flex-col gap-3">
+              <p class="text-lg text-gray-700">
+                This aligns a flex container’s lines within when there is extra
+                space in the cross-axis, similar to how justify-content aligns
+                individual items within the main-axis.
+              </p>
+              <ul class="list-disc marker:text-blue-400 px-8">
+                <li>
+                  normal (default): items are packed in their default position
+                  as if no value was set.
+                </li>
+                <li>
+                  flex-start / start: items packed to the start of the
+                  container. The (more supported) flex-start honors the
+                  flex-direction while start honors the writing-mode direction.
+                </li>
+                <li>
+                  flex-end / end: items packed to the end of the container. The
+                  (more support) flex-end honors the flex-direction while end
+                  honors the writing-mode direction.
+                </li>
+                <li>center: items centered in the container</li>
+                <li>
+                  space-between: items evenly distributed; the first line is at
+                  the start of the container while the last one is at the end
+                </li>
+                <li>
+                  space-around: items evenly distributed with equal space around
+                  each line
+                </li>
+                <li>
+                  space-evenly: items are evenly distributed with equal space
+                  around them
+                </li>
+                <li>stretch: lines stretch to take up the remaining space</li>
+              </ul>
+              <div
+                class="w-3/4 px-10 py-2 self-center bg-slate-900 rounded-2xl border border-blue-800 flex"
+              >
+                <p class="text-gray-200 font-semibold text-lg">
+                  .container {<br />
+                  align-content: flex-start | flex-end | center | space-between
+                  | space-around | space-evenly | stretch | start | end |
+                  baseline | first baseline | last baseline + ... safe |
+                  unsafe;<br />
+                  }
+                </p>
+              </div>
+              <p class="text-lg font-light px-5 text-justify">
+                The safe and unsafe modifier keywords can be used in conjunction
+                with all the rest of these keywords (although note browser
+                support), and deal with helping you prevent aligning elements
+                such that the content becomes inaccessible.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center">
+            <img
+              src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- video section -->
+    <section class="mx-28 px-16 py-5 text-gray-700">
+      <div class="flex flex-col">
+        <h1 class="text-4xl font-extrabold py-3">
+          <span class="text-blue-400">Our FlexBox</span> premium video
+        </h1>
+        <p class="text-lg py-5 text-justify w-auto">
+          CSS Flexbox is a CSS Layout Module where you can build great layouts
+          using this flexbox models. Learn it clearly in Tamil. CSS Flexbox is a
+          CSS Layout Module where you can build great layouts using this flexbox
+          models. Learn it clearly in Tamil. CSS Flexbox is a CSS Layout Module
+          where you can build great layouts using this flexbox models. Learn it
+          clearly in Tamil.
+        </p>
+      </div>
+      <div class="flex gap-3">
+        <div class="p-3 flex items-center flex-col gap-2 bg-blue-200">
+          <h4 class="text-lg font-bold text-gray-700">Learn CSS Flexbox</h4>
+          <iframe
+            width="320"
+            height="250"
+            src="https://www.youtube.com/embed/LkBlhvg2hqI?si=1c05sHxJreBUoHw3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            magni adipisci omnis esse sed laudantium maxime commodi sequi
+            doloribus inventore illo accusamus tempora, mollitia sint ut?
+            Dolorem dolores enim maiores voluptatem, dolor aspernatur quisquam
+            quaerat mollitia aliquid et optio laudantium cupiditate possimus
+            odit velit omnis molestias facilis adipisci quia maxime?
+          </p>
+        </div>
+        <div class="p-3 flex items-center flex-col gap-2 bg-blue-200">
+          <h4 class="text-lg font-bold text-gray-700">
+            Learn CSS Flexbox by Game
+          </h4>
+          <iframe
+            width="320"
+            height="250"
+            src="https://www.youtube.com/embed/BRuyCk5jBLk?si=0xxn41_3nKQSzyul"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            magni adipisci omnis esse sed laudantium maxime commodi sequi
+            doloribus inventore illo accusamus tempora, mollitia sint ut?
+            Dolorem dolores enim maiores voluptatem, dolor aspernatur quisquam
+            quaerat mollitia aliquid et optio laudantium cupiditate possimus
+            odit velit omnis molestias facilis adipisci quia maxime?
+          </p>
+        </div>
+        <div class="p-3 flex items-center flex-col gap-2 bg-blue-200">
+          <h4 class="text-lg font-bold text-gray-700">Flexbox Layout</h4>
+          <iframe
+            width="320"
+            height="250"
+            src="https://www.youtube.com/embed/q_wizKvzscI?si=IF9lcoRdU2rDGMRH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            magni adipisci omnis esse sed laudantium maxime commodi sequi
+            doloribus inventore illo accusamus tempora, mollitia sint ut?
+            Dolorem dolores enim maiores voluptatem, dolor aspernatur quisquam
+            quaerat mollitia aliquid et optio laudantium cupiditate possimus
+            odit velit omnis molestias facilis adipisci quia maxime?
+          </p>
         </div>
       </div>
     </section>
