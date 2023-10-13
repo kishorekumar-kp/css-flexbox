@@ -4,71 +4,113 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>css-flexbox</title>
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
-  <body class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300">
-    <!-- navbar -->
-    <header class="p-5">
-      <!-- <img src="https://th.bing.com/th/id/R.903e03dc54e72116b3ba0de977c67c0e?rik=%2b8JGXEBTkrJasw&riu=http%3a%2f%2fwww.alphanovatech.com%2fimages%2fcata%2fbg1_630x366.png&ehk=QN8k8Z49jf%2bvqZt1KgbXNMvwURixDhvya2FEqnLa3w8%3d&risl=&pid=ImgRaw&r=0" class="absolute w-full overflow-hidden"/> -->
-      <div class="text-gray-800 flex justify-around items-center">
-        <a href="" class="text-2xl font-extrabold"> CSS-FLEX</a>
-        <input
-          type="search"
-          placeholder="search here "
-          class="bg-slate-200 text-gray-800 px-4 py-2 rounded-full"
-        />
-        <ul class="flex items-center space-x-10 gap-3 font-semibold text-lg text-gray-600">
-          <li><a href="#home">Docs</a></li>
-          <li><a href="index.html#about">Videos</a></li>
-          <li><a href="index.html#contact">Support</a></li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill="currentColor"
-                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-              />
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <!-- hero section -->
-
-    <main class="m-28 px-10 py-5 flex text-gray-700 items-center">
-      <div class="flex flex-col p-4 w-3/4">
-        <h1 class="text-6xl font-bold p-2">CSS FLEX-BOX</h1>
-        <h3 class="text-3xl font-semibold p-3">A Complete Guide to Flexbox</h3>
-        <p class="text-lg font-medium p-3 text-justify">
-          Our comprehensive guide to CSS flexbox layout. This complete guide
-          explains everything about flexbox, focusing on all the different
-          possible properties for the parent element (the flex container) and
-          the child elements (the flex items). It also includes history, demos,
-          patterns, and a browser support chart.65
-        </p>
-        <div class="text-lg p-3 mt-3">
-          <button class="bg-blue-300 rounded-xl border border-blue-900 px-2 py-1">
-            Get started 📑
-          </button>
+  <body>
+    <div class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300">
+      <!-- navbar -->
+      <header class="p-5">
+        <!-- <img src="https://th.bing.com/th/id/R.903e03dc54e72116b3ba0de977c67c0e?rik=%2b8JGXEBTkrJasw&riu=http%3a%2f%2fwww.alphanovatech.com%2fimages%2fcata%2fbg1_630x366.png&ehk=QN8k8Z49jf%2bvqZt1KgbXNMvwURixDhvya2FEqnLa3w8%3d&risl=&pid=ImgRaw&r=0" class="absolute w-full overflow-hidden"/> -->
+        <div class="text-gray-800 flex justify-around items-center">
+          <a href="" class="text-2xl font-extrabold">
+            <span class="text-blue-400">CSS</span>-FLEX</a
+          >
+          <input
+            type="search"
+            placeholder="search here "
+            class="bg-slate-200 text-gray-800 px-4 py-2 rounded-full"
+          />
+          <ul
+            class="flex items-center space-x-10 gap-3 font-semibold text-lg text-gray-600"
+          >
+            <li><a href="#home">Docs</a></li>
+            <li><a href="index.html#about">Videos</a></li>
+            <li><a href="index.html#contact">Support</a></li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                />
+              </svg>
+            </li>
+          </ul>
         </div>
+      </header>
+
+      <!-- hero section -->
+
+      <main
+        class="mx-28 mt-28 px-10 py-5 pb-28 flex text-gray-700 items-center"
+      >
+        <div class="flex flex-col p-4 w-3/4">
+          <h1 class="text-6xl font-bold p-2">
+            <span class="text-blue-400">CSS</span> FLEX-BOX
+          </h1>
+          <h3 class="text-3xl font-semibold p-3">
+            A Complete Guide to Flexbox
+          </h3>
+          <p class="text-lg font-medium p-3 text-justify">
+            Our comprehensive guide to CSS flexbox layout. This complete guide
+            explains everything about flexbox, focusing on all the different
+            possible properties for the parent element (the flex container) and
+            the child elements (the flex items). It also includes history,
+            demos, patterns, and a browser support chart.65
+          </p>
+          <div class="text-lg p-3 mt-3">
+            <button
+              class="bg-blue-300 rounded-xl border border-blue-900 px-2 py-1"
+            >
+              Get started 📑
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="items-center">
+            <img
+              src="https://res.cloudinary.com/computer-know-how/images/f_auto,q_auto/v1586881243/1727766_3342/1727766_3342.jpg"
+              alt="profile"
+              width="380"
+              height="380"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- document section -->
+    <section class="mx-28 px-16 py-5 text-gray-700">
+      <div class="">
+        <h1 class="text-4xl font-extrabold py-3">
+          <span class="text-blue-400">CSS</span> FlexBox properties
+        </h1>
+        <p class="text-lg py-5 text-justify w-3/4">
+          Since flexbox is a whole module and not a single property, it involves
+          a lot of things including its whole set of properties. Some of them
+          are meant to be set on the container (parent element, known as “flex
+          container”) whereas the others are meant to be set on the children
+          (said “flex items”).
+        </p>
       </div>
       <div>
-        <div class="items-center">
-          <img
-            src="https://res.cloudinary.com/computer-know-how/images/f_auto,q_auto/v1586881243/1727766_3342/1727766_3342.jpg"
-            alt="profile"
-            width="380"
-            height="380"
-          />
+        <h1 class="text-2xl font-bold text-gray-800">
+          Display:<span class="text-blue-400"> Flex</span>
+        </h1>
+        <div>
+          <p>
+            This defines a flex container; inline or block depending on the
+            given value. It enables a flex context for all its direct children.
+          </p>
+
         </div>
       </div>
-    </main>
+    </section>
   </body>
 </html>
