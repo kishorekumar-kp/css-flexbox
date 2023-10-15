@@ -19,26 +19,30 @@
           >
           <input
             type="search"
-            placeholder="search here "
-            class="bg-slate-200 text-gray-800 px-4 py-2 rounded-full"
+            name=""
+            placeholder="Search here"
+            class="w-1/5 bg-gray-200 border-2 border-gray-500 placeholder-gray-700 px-3 py-2 rounded-2xl text-gray-700 border-none"
           />
           <ul
             class="flex items-center space-x-10 gap-3 font-semibold text-lg text-gray-600"
           >
-            <li><a href="#home">Docs</a></li>
-            <li><a href="index.html#about">Videos</a></li>
-            <li><a href="index.html#contact">Support</a></li>
+            <li class="hover:text-blue-500"><a href="index.html#docs">Docs</a></li>
+            <li class="hover:text-blue-500"><a href="index.html#video">Videos</a></li>
+            <li class="hover:text-blue-500"><a href="index.html#support">Support</a></li>
             <li>
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 16 16"
-              >
+                class="hover:text-blue-500"
+              ><a href="https://github.com/kishorekumar-kp" target="_blank">
                 <path
                   fill="currentColor"
                   d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-                />
+                  />
+                </a>
               </svg>
             </li>
           </ul>
@@ -63,13 +67,13 @@
             possible properties for the parent element (the flex container) and
             the child elements (the flex items).
           </p>
-          <div class="text-lg p-3 mt-3">
-            <button
-              class="bg-blue-300 rounded-xl border border-blue-900 px-2 py-1"
+          <a  href="index.html#docs" class="text-lg p-3 mt-3">
+            <button  
+              class="bg-blue-300 rounded-xl border-2 border-blue-500 px-2 py-1 hover:bg-blue-400"
             >
               Get started 📑
             </button>
-          </div>
+          </a>
         </div>
         <div>
           <div class="items-center">
@@ -85,7 +89,7 @@
     </div>
 
     <!-- document section -->
-    <section class="mx-28 px-16 py-5 text-gray-700">
+    <section id="docs" class="mx-28 px-16 py-5 text-gray-700 ">
       <div class="flex flex-col">
         <h1 class="text-4xl font-extrabold py-3">
           <span class="text-blue-400">CSS</span> FlexBox properties
@@ -404,7 +408,7 @@
     </section>
 
     <!-- video section -->
-    <section class="mx-28 px-16 py-5 text-gray-700">
+    <section id="video" class="mx-28 px-16 py-5 text-gray-700">
       <div class="flex flex-col pb-4">
         <h1 class="text-4xl font-extrabold py-3">
           <span class="text-blue-400">Our FlexBox</span> premium video
@@ -417,7 +421,7 @@
       </div>
       <div class="flex justify-around gap-3">
         <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
-          <h4 class="text-lg font-bold text-gray-700">Learn CSS Flexbox</h4>
+          <h4 class="text-lg font-bold text-center text-gray-700">Learn CSS Flexbox</h4>
           <iframe
             width="340"
             height="250"
@@ -439,7 +443,7 @@
           </p>
         </div>
         <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
-          <h4 class="text-lg font-bold text-gray-700 text-center">
+          <h4 class="text-lg font-bold  text-gray-700 text-center">
             Learn CSS Flexbox by Game
           </h4>
           <iframe
@@ -458,10 +462,11 @@
           </p>
           <a
             href="https://flexboxfroggy.com/"
-            class="text-lg py-2"
+            class="text-lg py-2 "
             target="_blank"
+            
           >
-            <mark class="bg-blue-300 px-2 py-1 rounded-xl"
+            <mark class="bg-blue-300 px-2 py-1 rounded-xl hover:bg-blue-400"
               >Link to play flexfroggy game</mark
             >
           </a>
@@ -470,7 +475,7 @@
           </p>
         </div>
         <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
-          <h4 class="text-lg font-bold text-gray-700">Flexbox Layout</h4>
+          <h4 class="text-lg text-center font-bold text-gray-700">Flexbox Layout</h4>
           <iframe
             width="340"
             height="250"
@@ -495,7 +500,7 @@
     </section>
 
     <!-- support -->
-    <section class="mx-28 px-16 py-5 text-gray-700">
+    <section id="support" class="mx-28 px-16 py-5 text-gray-700">
       <div class="flex flex-col pb-4">
         <h1 class="text-4xl font-extrabold py-3">
           <span class="text-blue-400">Our Community</span> Support
@@ -618,7 +623,7 @@
 
     <section class=" p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-gray-700 text-center ">
       <p class="p-2">
-        proudly designed by
+        Proudly designed by
         <a
         href="https://github.com/kishorekumar-kp/css-flexbox"
         title="GitHub page"
