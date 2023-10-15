@@ -24,27 +24,12 @@
             class="w-1/5 bg-gray-200 border-2 border-gray-500 placeholder-gray-700 px-3 py-2 rounded-2xl text-gray-700 border-none"
           />
           <ul
-            class="flex items-center space-x-10 gap-3 font-semibold text-lg text-gray-600"
+            class="lg:flex md:flex hidden items-center space-x-10 gap-3 font-semibold text-lg text-gray-600"
           >
             <li class="hover:text-blue-500"><a href="index.html#docs">Docs</a></li>
             <li class="hover:text-blue-500"><a href="index.html#video">Videos</a></li>
             <li class="hover:text-blue-500"><a href="index.html#support">Support</a></li>
-            <li>
-              
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 16 16"
-                class="hover:text-blue-500"
-              ><a href="https://github.com/kishorekumar-kp" target="_blank">
-                <path
-                  fill="currentColor"
-                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-                  />
-                </a>
-              </svg>
-            </li>
+
           </ul>
         </div>
       </header>
@@ -52,16 +37,16 @@
       <!-- hero section -->
 
       <main
-        class="mx-28 mt-28 px-10 py-5 pb-28 flex text-gray-700 items-center"
+        class="main_lg flex flex-col  text-gray-700 items-center"
       >
-        <div class="flex flex-col p-4 w-3/4">
-          <h1 class="text-6xl font-bold p-2">
+        <div class="flex flex-col p-4 w-auto lg:w-3/4 ">
+          <h1 class="xl:text-6xl lg:text-4xl md:text-3xl text-2xl font-bold p-2">
             <span class="text-blue-400">CSS</span> FLEX-BOX
           </h1>
-          <h3 class="text-3xl font-semibold p-3">
+          <h3 class="xl:text-3xl lg:text-2xl text-xl font-semibold p-3">
             A Complete Guide to Flexbox
           </h3>
-          <p class="text-lg font-medium p-3 text-justify">
+          <p class="xl:text-lg  text-sm font-medium p-3 text-justify">
             Our comprehensive guide to CSS flexbox layout. This complete guide
             explains everything about flexbox, focusing on all the different
             possible properties for the parent element (the flex container) and
@@ -89,12 +74,12 @@
     </div>
 
     <!-- document section -->
-    <section id="docs" class="mx-28 px-16 py-5 text-gray-700 ">
+    <section id="docs" class="section_mar py-5 px-10 text-gray-700 ">
       <div class="flex flex-col">
-        <h1 class="text-4xl font-extrabold py-3">
+        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-extrabold py-3">
           <span class="text-blue-400">CSS</span> FlexBox properties
         </h1>
-        <p class="text-lg py-5 text-justify w-11/12">
+        <p class="xl:text-lg text-sm py-5 text-justify xl:w-11/12 lg:w-10/12 w-auto">
           Since flexbox is a whole module and not a single property, it involves
           a lot of things including its whole set of properties. Some of them
           are meant to be set on the container (parent element, known as “flex
@@ -111,10 +96,10 @@
       </div>
       <div>
         <div
-          class="flex mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+          class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col items-center mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
         >
-          <div class="pt-5 w-1/2">
-            <h1 class="text-2xl font-bold text-gray-800">
+          <div class="pt-5 xl:w-1/2 lg:w-1/2 w-auto ">
+            <h1 class="lg:text-2xl xl:text-2xl text-xl font-bold text-gray-800">
               Display:<span class="text-blue-400"> Flex</span>
             </h1>
             <div class="p-5 flex flex-col gap-3">
@@ -124,7 +109,7 @@
                 children.
               </p>
               <div
-                class="w-3/4 px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
+                class="lg:w-3/4 lg:self-center w-auto px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
               >
                 <p class="text-gray-200 font-semibold text-lg">
                   .container {<br />
@@ -137,7 +122,7 @@
               </p>
             </div>
           </div>
-          <div class="w-1/2 flex items-center">
+          <div class="lg:w-1/2 w-full flex items-center">
             <img
               src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg"
               alt=""
@@ -145,10 +130,10 @@
           </div>
         </div>
         <div
-          class="flex mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col items-center mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
         >
-          <div class="pt-5 w-1/2">
-            <h1 class="text-2xl font-bold text-gray-800">
+          <div class="pt-5 xl:w-1/2 lg:w-1/2 w-auto ">
+            <h1 class="lg:text-2xl xl:text-2xl text-xl font-bold text-gray-800">
               Flex<span class="text-blue-400">-direction</span>
             </h1>
             <div class="p-5 flex flex-col gap-3 text-justify">
@@ -168,7 +153,7 @@
                 <li>column-reverse: same as row-reverse but bottom to top</li>
               </ul>
               <div
-                class="w-3/4 px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
+                class="lg:w-3/4 lg:self-center w-auto px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
               >
                 <p class="text-gray-200 font-semibold text-lg">
                   .container {<br />
@@ -179,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="w-1/2 flex items-center">
+          <div class="lg:w-1/2 w-full flex items-center self-center">
             <img
               src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg"
               alt=""
@@ -187,10 +172,10 @@
           </div>
         </div>
         <div
-          class="flex mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col items-center mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
         >
-          <div class="pt-5 w-1/2">
-            <h1 class="text-2xl font-bold text-gray-800">
+          <div class="pt-5 xl:w-1/2 lg:w-1/2 w-auto ">
+            <h1 class="lg:text-2xl xl:text-2xl text-xl font-bold text-gray-800">
               Justify<span class="text-blue-400">-Content</span>
             </h1>
             <div class="p-5 flex flex-col gap-3 text-justify">
@@ -247,7 +232,7 @@
                 </li>
               </ul>
               <div
-                class="w-3/4 px-10 py-2 self-center bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
+                class="lg:w-3/4 lg:self-center w-auto px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
               >
                 <p class="text-gray-200 font-semibold text-lg">
                   .container {<br />
@@ -266,7 +251,7 @@
               </p>
             </div>
           </div>
-          <div class="w-1/2 flex items-center">
+          <div class="lg:w-1/2 w-full flex items-center">
             <img
               src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg"
               alt=""
@@ -274,10 +259,10 @@
           </div>
         </div>
         <div
-          class="flex mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col items-center mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
         >
-          <div class="pt-5 w-1/2">
-            <h1 class="text-2xl font-bold text-gray-800">
+          <div class="pt-5 xl:w-1/2 lg:w-1/2 w-auto ">
+            <h1 class="lg:text-2xl xl:text-2xl text-xl font-bold text-gray-800">
               Align<span class="text-blue-400">-items</span>
             </h1>
             <div class="p-5 flex flex-col gap-3 text-justify">
@@ -309,7 +294,7 @@
                 </li>
               </ul>
               <div
-                class="w-3/4 self-center px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
+              class="lg:w-3/4 lg:self-center w-auto px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
               >
                 <p class="text-gray-200 font-semibold text-lg">
                   .container {<br />
@@ -327,7 +312,7 @@
               </p>
             </div>
           </div>
-          <div class="w-1/2 flex items-center">
+          <div class="lg:w-1/2 w-full flex items-center self-center">
             <img
               src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg"
               alt=""
@@ -335,10 +320,10 @@
           </div>
         </div>
         <div
-          class="flex mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
+        class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col items-center mt-10 p-5 bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300"
         >
-          <div class="pt-5 w-1/2">
-            <h1 class="text-2xl font-bold text-gray-800">
+          <div class="pt-5 xl:w-1/2 lg:w-1/2 w-auto ">
+            <h1 class="lg:text-2xl xl:text-2xl text-xl font-bold text-gray-800">
               Align<span class="text-blue-400">-content</span>
             </h1>
             <div class="p-5 flex flex-col gap-3 text-justify">
@@ -378,7 +363,7 @@
                 <li>stretch: lines stretch to take up the remaining space</li>
               </ul>
               <div
-                class="w-3/4 px-10 py-2 self-center bg-slate-900 rounded-2xl border-2 border-blue-800 flex"
+              class="lg:w-3/4 lg:self-center w-auto px-10 py-2 bg-slate-900 rounded-2xl border-2 border-blue-800 flex "
               >
                 <p class="text-gray-200 font-semibold text-lg">
                   .container {<br />
@@ -397,7 +382,7 @@
               </p>
             </div>
           </div>
-          <div class="w-1/2 flex items-center">
+          <div class="lg:w-1/2 w-full flex items-center self-center">
             <img
               src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg"
               alt=""
@@ -408,19 +393,19 @@
     </section>
 
     <!-- video section -->
-    <section id="video" class="mx-28 px-16 py-5 text-gray-700">
+    <section id="video" class="section_mar py-5 px-10 text-gray-700">
       <div class="flex flex-col pb-4">
-        <h1 class="text-4xl font-extrabold py-3">
+        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-extrabold py-3">
           <span class="text-blue-400">Our FlexBox</span> premium video
         </h1>
-        <p class="text-lg py-5 text-justify w-11/12">
+        <p class="xl:text-lg text-sm py-5 text-justify xl:w-11/12 lg:w-10/12 w-auto">
           CSS Flexbox is a CSS Layout Module where you can build great layouts
           using this flexbox models and directly impliments in your live
           projects. Learn it clearly in Tamil.
         </p>
       </div>
-      <div class="flex justify-around gap-3">
-        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
+      <div class="xl:flex xl:flex-row lg:flex lg:flex-row flex flex-col justify-around gap-3">
+        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl lg:w-1/3 w-auto">
           <h4 class="text-lg font-bold text-center text-gray-700">Learn CSS Flexbox</h4>
           <iframe
             width="340"
@@ -442,7 +427,7 @@
             Note: All the contents are available in your native language tamil
           </p>
         </div>
-        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
+        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl lg:w-1/3 w-auto">
           <h4 class="text-lg font-bold  text-gray-700 text-center">
             Learn CSS Flexbox by Game
           </h4>
@@ -474,7 +459,7 @@
             Note: All the contents are available in your native language tamil
           </p>
         </div>
-        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl w-1/3">
+        <div class="p-3 flex flex-col gap-2 bg-blue-200 rounded-xl lg:w-1/3 w-auto">
           <h4 class="text-lg text-center font-bold text-gray-700">Flexbox Layout</h4>
           <iframe
             width="340"
@@ -500,21 +485,21 @@
     </section>
 
     <!-- support -->
-    <section id="support" class="mx-28 px-16 py-5 text-gray-700">
+    <section id="support" class="section_mar py-5 px-10 text-gray-700">
       <div class="flex flex-col pb-4">
-        <h1 class="text-4xl font-extrabold py-3">
+        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-extrabold py-3">
           <span class="text-blue-400">Our Community</span> Support
         </h1>
-        <p class="text-lg py-5 text-justify w-11/12">
+        <p class="xl:text-lg text-sm py-5 text-justify xl:w-11/12 lg:w-10/12 w-auto">
           Our Community is ready to help anytime you need to improve your skills
           in css flexbox you can reach out in below mentioned social networks
         </p>
       </div>
-      <div class="flex space-x-10 justify-center">
+      <div class="lg:flex lg:flex-row lg:space-x-10 flex flex-col space-y-5 justify-center">
         <a
           href="https://www.youtube.com/@CyberDudeNetworks"
           target="_blank"
-          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center w-1/4 rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
+          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center lg:w-1/4 w-auto rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -542,7 +527,7 @@
         <a
           href="https://github.com/kishorekumar-kp"
           target="_blank"
-          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center w-1/4 rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
+          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center lg:w-1/4 w-auto rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -561,7 +546,7 @@
         <a
           href="https://www.instagram.com/cdudenetworks/"
           target="_blank"
-          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center w-1/4 rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
+          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center lg:w-1/4 w-auto rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -580,7 +565,7 @@
         <a
           href="https://t.me/cyberdudechannel"
           target="_blank"
-          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center w-1/4 rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
+          class="bg-blue-200 p-5 text-gray-700 flex flex-col gap-1 items-center lg:w-1/4 w-auto rounded-3xl border-2 border-blue-500 hover:bg-blue-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
