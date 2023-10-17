@@ -15,3 +15,7 @@
 .open{
   @apply block absolute top-16 left-0 items-center text-center w-full bg-blue-400
 }
+
+.gradient{
+  @apply text-transparent bg-clip-text bg-gradient-to-t from-blue-600 via-blue-400 to-blue-200
+}
