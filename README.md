@@ -2,8 +2,8 @@
 [ css-flexbox landing page]
 ## Table of Contents
 - [Project Title](#css-flexbox)
-- [Description]
-- [Demo]
+- [Description](#description)
+- [Demo](#demo)
 - [Internship](#internship)
 - [Technologies Used](vite,tailwindcss)
 - [License](#license)
