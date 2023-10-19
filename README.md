@@ -1,36 +1,28 @@
 # Project Title 
-[css-flexbox]
+[Short Project Description]
 ## Table of Contents
-- [CSS-flexbox](#project-title)
-- [Detailed information about css flexbox](#description)
-- [https://kishorekpcssflexbox.netlify.app/](#demo)
-- [In this project is party of an cyberdude internship](#internship)
-- [Vite, Tailwindcss](#technologies-used)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [Project Title](#CSS-flexbox landing page)
+- [Description](#in this landingpage you can read and learn more about css-flexbox)
+- [Demo](#https://kishorekpcssflexbox.netlify.app/)
+- [Internship](#internship)
+- [Technologies Used](#Vite and Tailwindcss)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 ## Description
 [Provide a more detailed description of your project. Explain what it does, its purpose, and any unique features.]
 ## Demo
-[Include links to a live demo, screenshots, or GIFs that showcase your project in action.]
+[#https://kishorekpcssflexbox.netlify.app/]
+
+
 ## Internship
 This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) as part of the 6-Month Free Internship program, a skill development initiative organized to enhance participants' skills. Mentoring was provided by [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky). For more information, [you can contact CyberDude Networks here](https://cyberdudenetworks.com).
 ## Technologies Used 
-[HTML, Vite , TailwindCSS and JS]
-## Features
-- [List the key features and functionality of your project.]
-## Installation
-[Provide step-by-step instructions on how to install and set up your project locally. Include any prerequisites and dependencies.]
-## Usage
-[Explain how to use your project, including any configuration options, examples, or code snippets.]
-## Contributing
-[Explain how others can contribute to your project, such as reporting issues, submitting pull requests, and any coding guidelines.]
+[Vite, 
+Tailwindcss
+]
+
 ## License
 [Specify the license under which your project is distributed. For example, you can use an open-source license like MIT, GPL, or Apache 2.0. Include a link to the full license text.]
 ## Acknowledgments
-[If your project uses third-party code, libraries, or resources, acknowledge and give credit to the authors or projects that have been helpful.]
+[I Get the information like images and content from the this web site](https://https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 ---
-[Optional: Include badges, social media links, or additional information about your project or yourself.]
