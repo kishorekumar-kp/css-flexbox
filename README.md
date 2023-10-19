@@ -2,8 +2,8 @@
 [ css-flexbox landing page]
 ## Table of Contents
 - [Project Title](#css-flexbox)
-- [Description](#in this landingpage you can read and learn more about css-flexbox)
-- [Demo](#https://kishorekpcssflexbox.netlify.app/)
+- [Description]
+- [Demo]
 - [Internship](#internship)
 - [Technologies Used](vite,tailwindcss)
 - [License](#license)
