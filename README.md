@@ -1,15 +1,15 @@
 # Project Title 
-[Short Project Description]
+[ css-flexbox landing page]
 ## Table of Contents
-- [Project Title](#CSS-flexbox landing page)
+- [Project Title](#css-flexbox)
 - [Description](#in this landingpage you can read and learn more about css-flexbox)
 - [Demo](#https://kishorekpcssflexbox.netlify.app/)
 - [Internship](#internship)
-- [Technologies Used](#Vite and Tailwindcss)
+- [Technologies Used](vite,tailwindcss)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 ## Description
-[Provide a more detailed description of your project. Explain what it does, its purpose, and any unique features.]
+[CSS-flexbox landing page is usefll to this documentation is learn more from css flexbox and its properties .]
 ## Demo
 [#https://kishorekpcssflexbox.netlify.app/]
 
