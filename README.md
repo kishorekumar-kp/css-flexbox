@@ -1,4 +1,4 @@
-# css- flexbox Landing Page
+# css- flexbox Landing Page 👋
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 ## Description
 
-I create a simple css-flexbox landing page by using HTML and TailwindCSS
+I create a simple css-flexbox landing page by using HTML and TailwindCSS , you can learn more about clear image and content of css flexbox in simple way.
 
 ## Demo
 
@@ -73,4 +73,8 @@ npm run dev
 Design inspired from [Nuxt - vue framework](https://nuxt.com/)
 
 Get those images from [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+---
+
+Reach me to LinkedIn **https://www.linkedin.com/in/kishorekumar-kp/** 
 
